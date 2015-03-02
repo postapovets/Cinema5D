@@ -168,9 +168,15 @@
     <Compile Include="Migrations\201503020901047_Initial.Designer.cs">
       <DependentUpon>201503020901047_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503021314142_Films.cs" />
+    <Compile Include="Migrations\201503021314142_Films.Designer.cs">
+      <DependentUpon>201503021314142_Films.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cinema5DContext.cs" />
+    <Compile Include="Models\Film.cs" />
+    <Compile Include="Models\FilmsController.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -232,6 +238,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Films\Create.cshtml" />
+    <Content Include="Views\Films\Delete.cshtml" />
+    <Content Include="Views\Films\Details.cshtml" />
+    <Content Include="Views\Films\Edit.cshtml" />
+    <Content Include="Views\Films\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -246,6 +257,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201503020901047_Initial.resx">
       <DependentUpon>201503020901047_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503021314142_Films.resx">
+      <DependentUpon>201503021314142_Films.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

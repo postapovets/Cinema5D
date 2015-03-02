@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Cinema5D.Models.Film>
+
+@{
+    ViewBag.Title = "Фільми";
+}
+
+<h2>Фільми</h2>
+
+<p>
+    @Html.ActionLink("Додати новий", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RunningTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CommandLink)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RunningTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CommandLink)
+        </td>
+        <td>
+            @Html.ActionLink("Редагувати", "Edit", new { id=item.FilmID }) |
+            @Html.ActionLink("Деталі", "Details", new { id=item.FilmID }) |
+            @Html.ActionLink("Видалити", "Delete", new { id=item.FilmID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -6,5 +6,6 @@ using System.Web;
 
 namespace Cinema5D.Models {
     public class Cinema5DContext : DbContext {
+        public DbSet<Film> Films { get; set; }
     }
 }
