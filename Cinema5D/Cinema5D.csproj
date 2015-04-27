@@ -191,7 +191,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Cinema5DContext.cs" />
     <Compile Include="Models\Film.cs" />
-    <Compile Include="Models\FilmsController.cs" />
+    <Compile Include="Controllers\FilmsController.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
